@@ -109,7 +109,8 @@ def print_tree(tree: Tree) -> None:
 
 
 def main():
-    input_string = "(1 (2 (4 5 6 (7) 108 (9)) 3))"
+    input_string = input("Введите текстовую строку, представляющую дерево:")
+    # input_string = "(1 (2 (4 5 6 (7) 108 (9)) 3))"
     # input_string = '(1 (2 (4        )      )       6)'
     # input_string = '(2 3 (4 5 (5 7) 6) 6 (5 6))'
     tokens = ALLOW_TOKEN.findall(input_string)
